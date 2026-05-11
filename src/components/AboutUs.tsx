@@ -1,5 +1,5 @@
 import { ArrowRight, CheckCircle2 } from 'lucide-react';
-import teamImage from '../assets/img/equipe-promove.jpeg';
+import teamImage from '../assets/img/foto-equipe.webp';
 import LogoEixoPreta from '../assets/img/logo-eixo-preta.png'
 export default function AboutUs() {
   const benefits = [
