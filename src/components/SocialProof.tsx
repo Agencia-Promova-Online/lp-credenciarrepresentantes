@@ -125,7 +125,6 @@ export default function SocialProof() {
   ];
 
   const videos = [
-    { src: videoFernanda, name: 'Fernanda', role: 'Representante' },
     { src: videoIsabela, name: 'Isabela Martins', role: 'Representante' },
     { src: videoWilliams, name: 'Cesar', role: 'Representante' },
     { src: videoEzequias, name: 'Ezequias', role: 'Representante' },
