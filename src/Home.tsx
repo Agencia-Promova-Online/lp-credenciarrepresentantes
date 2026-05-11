@@ -6,7 +6,7 @@ import Segments from './components/Segments';
 import SocialProof from './components/SocialProof';
 import AboutUs from './components/AboutUs';
 import HowItWorks from './components/HowItWorks';
-// import Investment1395 from './components/Investment1395';
+import Investment1395 from './components/Investment1395';
 import Plans from './components/Plans';
 import OrderBump from './components/OrderBump';
 import FAQ from './components/FAQ';
@@ -25,8 +25,8 @@ function Home() {
       <SocialProof />
       <AboutUs />
       <HowItWorks />
-      {/* <Investment1395 /> */}
-      <Plans />
+      <Investment1395 />
+      {/* <Plans /> */}
       <OrderBump />
       <FAQ />
       <Form />

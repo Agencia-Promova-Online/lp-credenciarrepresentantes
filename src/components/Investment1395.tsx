@@ -4,14 +4,13 @@ export default function Investment() {
   const includes = [
     'Gestão completa de tráfego pago',
     'Até 4 criativos profissionais por mês',
-    'Site de alta conversão personalizado',
-    'CRM de atendimento completo',
+    'Um Site de alta conversão',
+    'CRM de atendimento',
     'Treinamento financeiro para consórcio',
     'Treinamento de gestão de time',
     'Treinamento comercial para vendas no exterior',
-    'Automação de remarketing e funil de cadência',
     'Suporte estratégico contínuo de marketing e branding',
-    'Suporte para roteiro de video de vendas',
+    'Suporte para video de vendas',
 
   ];
 
