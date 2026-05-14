@@ -1,5 +1,6 @@
 import { Shield } from 'lucide-react';
 import LogoEixoBranca from '../assets/img/logo-eixo-branca.png';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
@@ -50,6 +51,14 @@ export default function Footer() {
                 Esta é uma landing page de captação. O investimento em anúncios é realizado
                 pelo representante.
               </p>
+              <div className="mt-4">
+                <Link
+                  to="/gerador-indicacao"
+                  className="inline-flex items-center gap-2 text-gray-500 hover:text-gray-300 transition-colors"
+                >
+                  Gerador de link de indicação
+                </Link>
+              </div>
             </div>
           </div>
         </div>
