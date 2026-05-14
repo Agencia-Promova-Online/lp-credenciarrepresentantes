@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react';
 import { Play } from 'lucide-react';
 import LogoEixoBranca from '../assets/img/logo-eixo-branca.png';
-import Vsl from '../assets/videos/Vsl.mp4';
+import Vsl from '../assets/videos/vsl.mp4';
 
 export default function Hero() {
   const scrollToForm = () => {

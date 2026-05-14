@@ -10,7 +10,7 @@ import 'swiper/css/effect-coverflow';
 // Import videos
 import videoFernanda from '../assets/videos/Video-Fernanda.mp4';
 import videoIsabela from '../assets/videos/Video-Isabela.mp4';
-import videoEzequias from '../assets/videos/Video-Ezequias.mp4';
+import videoEzequias from '../assets/videos/video-ezequias.mp4';
 import videoWilliams from '../assets/videos/Video-Williams.mp4';
 import videoEvellyn from '../assets/videos/video-evellyn.mp4';
 import videoCesar from '../assets/videos/video-cesar.mp4';
