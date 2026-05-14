@@ -22,7 +22,7 @@ function Home() {
       <Problems />
       <Solutions />
       <Segments />
-      <SocialProof />
+      {/* <SocialProof /> */}
       <AboutUs />
       <HowItWorks />
       <Investment1395 />
