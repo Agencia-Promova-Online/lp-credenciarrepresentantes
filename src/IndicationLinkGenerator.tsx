@@ -45,13 +45,13 @@ const dataUrlPngToJpg = (pngDataUrl: string, quality = 0.92) =>
     image.src = pngDataUrl;
   });
 
-const buildIndicationUrl = (baseUrl: string, indicatorPhone: string, indicatorName: string) => {
+const buildIndicationUrl = (baseUrl: string, indicatorFirstName: string, indicatorPhone: string) => {
   const params = new URLSearchParams({
-    utm_source: 'indicacao',
+    utm_source: indicatorFirstName,
     utm_medium: 'qr_code',
     utm_campaign: 'gerador_link_indicacao',
-    utm_content: indicatorPhone,
-    utm_term: indicatorName,
+    utm_content: 'indicacao',
+    utm_term: indicatorPhone,
     objetivo: 'indicacao',
   });
 
@@ -86,8 +86,8 @@ export default function IndicationLinkGenerator() {
     setCopyStatus('idle');
 
     try {
-      const indicatorName = `${form.firstName} ${form.lastName}`.trim().replace(/\s+/g, ' ');
-      const url = buildIndicationUrl(baseUrl, form.phone.trim(), indicatorName);
+      const indicatorFirstName = form.firstName.trim();
+      const url = buildIndicationUrl(baseUrl, indicatorFirstName, form.phone.trim());
       const qrPngDataUrl = await QRCode.toDataURL(url, {
         margin: 2,
         width: 1024,
@@ -105,11 +105,11 @@ export default function IndicationLinkGenerator() {
       const payload = {
         ...form,
         url,
-        utm_source: 'indicacao',
+        utm_source: indicatorFirstName,
         utm_medium: 'qr_code',
         utm_campaign: 'gerador_link_indicacao',
-        utm_content: form.phone.trim(),
-        utm_term: indicatorName,
+        utm_content: 'indicacao',
+        utm_term: form.phone.trim(),
         objetivo: 'indicacao',
         timestamp: new Date().toISOString(),
         userAgent: navigator.userAgent,
