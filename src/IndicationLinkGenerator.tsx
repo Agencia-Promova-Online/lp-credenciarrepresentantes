@@ -178,7 +178,7 @@ export default function IndicationLinkGenerator() {
               className="h-10 md:h-12 w-auto mb-6"
             />
             <h1 className="text-3xl md:text-5xl font-bold text-gray-900 tracking-tight">
-              Gerador de Link de Indicação
+              Gerador de Link de Rastreio
             </h1>
             <p className="mt-4 text-gray-600 max-w-2xl text-base md:text-lg">
               Gere um link com rastreamento e um QR Code pronto para compartilhar.
@@ -273,7 +273,7 @@ export default function IndicationLinkGenerator() {
                   disabled={isGenerating}
                   className="w-full py-4 bg-gradient-to-r from-red-600 to-red-700 text-white text-lg font-bold rounded-2xl hover:from-red-700 hover:to-red-800 transition-all duration-200 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  {isGenerating ? 'Gerando...' : 'Gerar link de indicação'}
+                  {isGenerating ? 'Gerando...' : 'Gerar link'}
                 </button>
 
                 <div className="text-sm">

@@ -56,7 +56,7 @@ export default function Footer() {
                   to="/gerador-indicacao"
                   className="inline-flex items-center gap-2 text-gray-500 hover:text-gray-300 transition-colors"
                 >
-                  Gerador de link de indicação
+                  Gerador de link de Rastreio
                 </Link>
               </div>
             </div>
