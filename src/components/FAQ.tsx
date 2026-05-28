@@ -7,7 +7,7 @@ export default function FAQ() {
   const faqs = [
     {
       question: 'Essa estrutura é para iniciantes no mercado de consórcio?',
-      answer: 'Não. A estrutura da Promove Consórcio foi desenvolvida exclusivamente para representantes que já atuam no mercado e desejam escalar com previsibilidade. Se você está começando, recomendamos primeiro adquirir experiência prática antes de investir em tráfego pago e estrutura avançada.',
+      answer: 'Não. A estrutura da Eixo Consórcio foi desenvolvida exclusivamente para representantes que já atuam no mercado e desejam escalar com previsibilidade. Se você está começando, recomendamos primeiro adquirir experiência prática antes de investir em tráfego pago e estrutura avançada.',
     },
     {
       question: 'A Eixo fornece os leads ou apenas a estrutura?',
