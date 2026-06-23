@@ -71,7 +71,7 @@ export default function Plans() {
     <section className="py-20 bg-gray-900 relative overflow-hidden" id="planos">
       {/* Background Elements */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
-        <div className="absolute -top-24 -left-24 w-96 h-96 bg-red-600/10 rounded-full blur-3xl"></div>
+        <div className="absolute -top-24 -left-24 w-96 h-96 bg-[#b8974c]/10 rounded-full blur-3xl"></div>
         <div className="absolute top-1/2 right-0 w-80 h-80 bg-blue-600/10 rounded-full blur-3xl"></div>
         <div className="absolute bottom-0 left-1/3 w-64 h-64 bg-purple-600/10 rounded-full blur-3xl"></div>
       </div>
@@ -79,7 +79,7 @@ export default function Plans() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight">
-            Escolha o Seu <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-800">Nível de Jogo</span>
+            Escolha o Seu <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#d6b674] to-[#8f7336]">Nível de Jogo</span>
           </h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
             Estruturas validadas para cada momento da sua jornada no mercado de consórcios.
@@ -92,14 +92,14 @@ export default function Plans() {
               key={index} 
               className={`
                 relative bg-gray-800/50 backdrop-blur-sm rounded-2xl border transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl flex flex-col group
-                ${plan.highlight ? 'border-red-500 ring-2 ring-red-500/20 shadow-red-900/20 scale-105 z-10' : `border-gray-700 hover:border-gray-500 ${plan.color}`}
+                ${plan.highlight ? 'border-[#c9a05a] ring-2 ring-[#c9a05a]/20 shadow-[#6e5524]/20 scale-105 z-10' : `border-gray-700 hover:border-gray-500 ${plan.color}`}
               `}
             >
               {/* Glow Effect on Hover */}
-              <div className={`absolute inset-0 rounded-2xl transition-opacity duration-500 opacity-0 group-hover:opacity-100 bg-gradient-to-b ${plan.highlight ? 'from-red-500/10 to-transparent' : 'from-gray-500/10 to-transparent'} pointer-events-none`}></div>
+              <div className={`absolute inset-0 rounded-2xl transition-opacity duration-500 opacity-0 group-hover:opacity-100 bg-gradient-to-b ${plan.highlight ? 'from-[#c9a05a]/10 to-transparent' : 'from-gray-500/10 to-transparent'} pointer-events-none`}></div>
 
               {plan.highlight && (
-                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-red-600 to-red-800 text-white text-xs font-bold px-4 py-1 rounded-full shadow-lg whitespace-nowrap animate-pulse">
+                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-[#c9a05a] to-[#8f7336] text-white text-xs font-bold px-4 py-1 rounded-full shadow-lg whitespace-nowrap animate-pulse">
                   MAIS POPULAR
                 </div>
               )}
@@ -126,7 +126,7 @@ export default function Plans() {
                   {plan.features.map((feature, idx) => (
                     <div key={idx} className="flex items-start">
                       <div className="mt-1 min-w-[20px]">
-                        <Check className={`w-4 h-4 ${plan.highlight ? 'text-red-500' : 'text-gray-500'}`} />
+                        <Check className={`w-4 h-4 ${plan.highlight ? 'text-[#c9a05a]' : 'text-gray-500'}`} />
                       </div>
                       <span className="ml-3 text-gray-300 text-sm">{feature}</span>
                     </div>
@@ -145,7 +145,7 @@ export default function Plans() {
                      className={`
                        block w-full py-4 px-6 rounded-xl font-bold text-center transition-all duration-300 transform hover:scale-105 active:scale-95
                        ${plan.highlight 
-                         ? 'bg-gradient-to-r from-red-600 to-red-800 hover:from-red-500 hover:to-red-700 text-white shadow-lg shadow-red-900/30 hover:shadow-red-900/50' 
+                         ? 'bg-gradient-to-r from-[#c9a05a] to-[#8f7336] hover:from-[#d6b674] hover:to-[#a7863d] text-white shadow-lg shadow-[#6e5524]/30 hover:shadow-[#6e5524]/50' 
                          : 'bg-gray-700 hover:bg-gray-600 text-white border border-gray-600 hover:border-gray-500'}
                      `}
                    >

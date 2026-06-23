@@ -28,7 +28,7 @@ export default function Problems() {
            <img src={LogoEixoBranca} alt="Logo Eixo Consórcios" className="mx-auto w-32 md:w-60 mb-8" />
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              O <span className="text-red-500">Problema</span> dos Representantes
+              O <span className="text-[#c9a05a]">Problema</span> dos Representantes
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
               A maioria dos representantes de consórcio está presa em um ciclo de instabilidade,
@@ -40,11 +40,11 @@ export default function Problems() {
             {problems.map((problem, index) => (
               <div
                 key={index}
-                className="bg-gradient-to-br from-gray-800 to-gray-900 border border-gray-700 rounded-xl p-8 hover:border-red-600 transition-all duration-300 group"
+                className="bg-gradient-to-br from-gray-800 to-gray-900 border border-gray-700 rounded-xl p-8 hover:border-[#b8974c] transition-all duration-300 group"
               >
                 <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-red-600/20 rounded-lg flex items-center justify-center group-hover:bg-red-600/30 transition-colors">
-                    <X className="w-6 h-6 text-red-500" />
+                  <div className="flex-shrink-0 w-12 h-12 bg-[#b8974c]/20 rounded-lg flex items-center justify-center group-hover:bg-[#b8974c]/30 transition-colors">
+                    <X className="w-6 h-6 text-[#c9a05a]" />
                   </div>
                   <div>
                     <h3 className="text-xl font-bold mb-3 text-white">{problem.title}</h3>
@@ -56,9 +56,9 @@ export default function Problems() {
           </div>
 
           <div className="mt-16 text-center">
-            <div className="inline-block bg-red-600/10 border border-red-600/30 rounded-xl px-8 py-6 max-w-2xl">
+            <div className="inline-block bg-[#b8974c]/10 border border-[#b8974c]/30 rounded-xl px-8 py-6 max-w-2xl">
               <p className="text-xl text-gray-200 leading-relaxed">
-                <span className="font-bold text-red-400">Sem estrutura profissional, </span>
+                <span className="font-bold text-[#d8be86]">Sem estrutura profissional, </span>
                 você está competindo com uma mão amarrada nas costas contra quem já tem
                 tráfego pago, CRM e suporte estratégico.
               </p>

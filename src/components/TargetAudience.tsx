@@ -16,7 +16,7 @@ export default function TargetAudience() {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Para Quem é Essa <span className="text-red-600">Estrutura</span>
+              Para Quem é Essa <span className="text-[#b8974c]">Estrutura</span>
             </h2>
             <p className="text-xl text-gray-600">
               Nossa estrutura foi desenhada especialmente para representantes que já atuam no mercado
@@ -28,7 +28,7 @@ export default function TargetAudience() {
               {benefits.map((benefit, index) => (
                 <div key={index} className="flex items-start gap-4">
                   <div className="flex-shrink-0 mt-1">
-                    <CheckCircle className="w-6 h-6 text-red-600" />
+                    <CheckCircle className="w-6 h-6 text-[#b8974c]" />
                   </div>
                   <p className="text-lg text-gray-700 leading-relaxed">{benefit}</p>
                 </div>
@@ -36,13 +36,13 @@ export default function TargetAudience() {
             </div>
           </div>
 
-          <div className="bg-red-50 border-2 border-red-200 rounded-2xl p-8 flex items-start gap-4">
-            <AlertCircle className="w-8 h-8 text-red-600 flex-shrink-0" />
+          <div className="bg-[#f8f3e7] border-2 border-[#e2cf9d] rounded-2xl p-8 flex items-start gap-4">
+            <AlertCircle className="w-8 h-8 text-[#b8974c] flex-shrink-0" />
             <div>
-              <h3 className="text-xl font-bold text-red-900 mb-2">
+              <h3 className="text-xl font-bold text-[#7a612b] mb-2">
                 Estrutura Exclusiva para Representantes de Consórcio
               </h3>
-              <p className="text-red-800 leading-relaxed">
+              <p className="text-[#8f7336] leading-relaxed">
                 Este não é um programa para iniciantes.
                 É uma estrutura premium desenvolvida exclusivamente para profissinais que atua em algum setor como representante de consórcio
                 e querem obter um crescimento sustentável e previsível.

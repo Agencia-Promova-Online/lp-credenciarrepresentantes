@@ -18,7 +18,7 @@ export default function Segments() {
       icon: Car,
       title: 'Carros',
       description: 'Veículos leves, populares, SUVs e modelos premium',
-      color: 'from-red-500 to-red-700',
+      color: 'from-[#d6b674] to-[#b8974c]',
     },
     {
       icon: Bike,
@@ -40,7 +40,7 @@ export default function Segments() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Segmentos Que Você Pode <span className="text-red-600">Vender</span>
+              Segmentos Que Você Pode <span className="text-[#b8974c]">Vender</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Diversifique seu portfólio e alcance diferentes públicos com nossa estrutura completa
@@ -51,7 +51,7 @@ export default function Segments() {
             {segments.map((segment, index) => (
               <div
                 key={index}
-                className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-2 border-gray-200 hover:border-red-600"
+                className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-2 border-gray-200 hover:border-[#b8974c]"
               >
                 <div className={`w-16 h-16 bg-gradient-to-br ${segment.color} rounded-xl flex items-center justify-center mb-6 shadow-lg`}>
                   <segment.icon className="w-8 h-8 text-white" />
@@ -62,7 +62,7 @@ export default function Segments() {
             ))}
           </div>
 
-          <div className="bg-gradient-to-r from-red-600 to-red-700 text-white rounded-2xl p-10 text-center shadow-2xl">
+          <div className="bg-gradient-to-r from-[#c9a05a] to-[#b8974c] text-white rounded-2xl p-10 text-center shadow-2xl">
             <h3 className="text-3xl font-bold mb-4">Múltiplas Oportunidades de Faturamento</h3>
             <p className="text-xl opacity-90 max-w-3xl mx-auto">
               Com acesso a diversos segmentos, você pode atender diferentes perfis de clientes

@@ -168,7 +168,7 @@ export default function IndicationLinkGenerator() {
   }, [form.firstName, form.lastName]);
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-red-50">
+    <main className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-[#f8f3e7]">
       <div className="container mx-auto px-4 py-14">
         <div className="max-w-5xl mx-auto">
           <div className="flex flex-col items-center text-center mb-10">
@@ -198,7 +198,7 @@ export default function IndicationLinkGenerator() {
                       value={form.firstName}
                       onChange={e => onChange('firstName')(e.target.value)}
                       required
-                      className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-red-600 focus:outline-none transition-colors"
+                      className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-[#b8974c] focus:outline-none transition-colors"
                       placeholder="Ex.: Maria"
                       autoComplete="given-name"
                     />
@@ -212,7 +212,7 @@ export default function IndicationLinkGenerator() {
                       value={form.lastName}
                       onChange={e => onChange('lastName')(e.target.value)}
                       required
-                      className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-red-600 focus:outline-none transition-colors"
+                      className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-[#b8974c] focus:outline-none transition-colors"
                       placeholder="Ex.: Silva"
                       autoComplete="family-name"
                     />
@@ -229,7 +229,7 @@ export default function IndicationLinkGenerator() {
                       value={form.phone}
                       onChange={e => onChange('phone')(e.target.value)}
                       required
-                      className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-red-600 focus:outline-none transition-colors"
+                      className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-[#b8974c] focus:outline-none transition-colors"
                       placeholder="(00) 00000-0000"
                       inputMode="tel"
                       autoComplete="tel"
@@ -244,7 +244,7 @@ export default function IndicationLinkGenerator() {
                       value={form.cpf}
                       onChange={e => onChange('cpf')(e.target.value)}
                       required
-                      className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-red-600 focus:outline-none transition-colors"
+                      className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-[#b8974c] focus:outline-none transition-colors"
                       placeholder="000.000.000-00"
                       inputMode="numeric"
                       autoComplete="off"
@@ -262,7 +262,7 @@ export default function IndicationLinkGenerator() {
                     value={form.email}
                     onChange={e => onChange('email')(e.target.value)}
                     required
-                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-red-600 focus:outline-none transition-colors"
+                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-[#b8974c] focus:outline-none transition-colors"
                     placeholder="seu@email.com"
                     autoComplete="email"
                   />
@@ -271,7 +271,7 @@ export default function IndicationLinkGenerator() {
                 <button
                   type="submit"
                   disabled={isGenerating}
-                  className="w-full py-4 bg-gradient-to-r from-red-600 to-red-700 text-white text-lg font-bold rounded-2xl hover:from-red-700 hover:to-red-800 transition-all duration-200 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-full py-4 bg-gradient-to-r from-[#c9a05a] to-[#b8974c] text-white text-lg font-bold rounded-2xl hover:from-[#d3ad66] hover:to-[#a7863d] transition-all duration-200 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {isGenerating ? 'Gerando...' : 'Gerar link'}
                 </button>
@@ -294,8 +294,8 @@ export default function IndicationLinkGenerator() {
 
             <section className="bg-white rounded-3xl shadow-xl border border-gray-100 p-7 md:p-10">
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-10 h-10 rounded-2xl bg-red-50 flex items-center justify-center">
-                  <Link2 className="w-5 h-5 text-red-700" />
+                <div className="w-10 h-10 rounded-2xl bg-[#f7f1e3] flex items-center justify-center">
+                  <Link2 className="w-5 h-5 text-[#8f7336]" />
                 </div>
                 <div>
                   <h2 className="text-xl font-bold text-gray-900">QR Code + Link</h2>
@@ -338,7 +338,7 @@ export default function IndicationLinkGenerator() {
                       <button
                         type="button"
                         onClick={onCopy}
-                        className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-red-600 text-white font-semibold hover:bg-red-700 transition-colors"
+                        className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-[#b8974c] text-white font-semibold hover:bg-[#a7863d] transition-colors"
                       >
                         <Copy className="w-5 h-5" />
                         {copyStatus === 'copied' ? 'Copiado!' : copyStatus === 'error' ? 'Falhou' : 'Copiar'}

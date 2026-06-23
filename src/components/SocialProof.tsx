@@ -70,7 +70,7 @@ const VideoSlide = ({ src, name, role }: VideoSlideProps) => {
             isPlaying ? 'opacity-0 hover:opacity-100' : 'opacity-100'
           }`}
         >
-          <div className="w-16 h-16 bg-red-600/90 rounded-full flex items-center justify-center backdrop-blur-sm shadow-xl transform transition-transform duration-300 hover:scale-110">
+          <div className="w-16 h-16 bg-[#b8974c]/90 rounded-full flex items-center justify-center backdrop-blur-sm shadow-xl transform transition-transform duration-300 hover:scale-110">
             {isPlaying ? (
               <Pause className="w-8 h-8 text-white fill-white" />
             ) : (
@@ -138,7 +138,7 @@ export default function SocialProof() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Resultados <span className="text-red-500">Reais</span> de Quem Usa Nossa Estrutura.
+              Resultados <span className="text-[#c9a05a]">Reais</span> de Quem Usa Nossa Estrutura.
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
               Representantes que estavam travados agora têm previsibilidade e crescimento consistente
@@ -149,10 +149,10 @@ export default function SocialProof() {
             {results.map((result, index) => (
               <div
                 key={index}
-                className="bg-gradient-to-br from-red-600 to-red-700 rounded-xl p-6 text-center shadow-xl transform hover:scale-105 transition-transform duration-300"
+                className="bg-gradient-to-br from-[#c9a05a] to-[#b8974c] rounded-xl p-6 text-center shadow-xl transform hover:scale-105 transition-transform duration-300"
               >
                 <div className="text-3xl md:text-4xl font-bold mb-2">{result.value}</div>
-                <div className="text-sm text-red-100">{result.label}</div>
+                <div className="text-sm text-[#f3e7c7]">{result.label}</div>
               </div>
             ))}
           </div>
@@ -160,7 +160,7 @@ export default function SocialProof() {
           {/* Video Carousel Section */}
           <div className="mb-24">
             <div className="flex items-center justify-center gap-2 mb-10">
-              <Play className="w-8 h-8 text-red-500 fill-red-500" />
+              <Play className="w-8 h-8 text-[#c9a05a] fill-[#c9a05a]" />
               <h3 className="text-3xl font-bold text-center">Assista aos Depoimentos em Vídeo</h3>
             </div>
             
@@ -237,10 +237,10 @@ export default function SocialProof() {
             {testimonials.map((testimonial, index) => (
               <div
                 key={index}
-                className="bg-gradient-to-br from-gray-800 to-gray-900 border border-gray-700 rounded-2xl p-8 hover:border-red-600 transition-all duration-300 hover:shadow-red-900/20 hover:shadow-xl"
+                className="bg-gradient-to-br from-gray-800 to-gray-900 border border-gray-700 rounded-2xl p-8 hover:border-[#b8974c] transition-all duration-300 hover:shadow-[#6e5524]/20 hover:shadow-xl"
               >
                 <div className="flex items-center justify-between mb-6">
-                  <div className="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center">
+                  <div className="w-12 h-12 bg-[#b8974c] rounded-full flex items-center justify-center">
                     <Quote className="w-6 h-6 text-white" />
                   </div>
                   <div className="text-right">
@@ -259,7 +259,7 @@ export default function SocialProof() {
                 <div className="pt-4 border-t border-gray-700">
                   <div className="font-bold text-white mb-1">{testimonial.name}</div>
                   <div className="text-sm text-gray-400 mb-2">{testimonial.location}</div>
-                  <div className="text-sm text-red-400 font-semibold">{testimonial.result}</div>
+                  <div className="text-sm text-[#d8be86] font-semibold">{testimonial.result}</div>
                 </div>
               </div>
             ))}
@@ -280,10 +280,10 @@ export default function SocialProof() {
       <style>{`
         .swiper-button-next,
         .swiper-button-prev {
-          color: #ef4444;
+          color: #b8974c;
         }
         .swiper-pagination-bullet-active {
-          background: #ef4444;
+          background: #b8974c;
         }
       `}</style>
     </section>

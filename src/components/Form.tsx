@@ -113,14 +113,14 @@ export default function Form() {
   }
 
   return (
-    <section id="form" className="py-24 bg-gradient-to-br from-red-600 to-red-800">
+    <section id="form" className="py-24 bg-gradient-to-br from-[#c9a05a] to-[#8f7336]">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Preencha o Formulário de Qualificação
             </h2>
-            <p className="text-xl text-red-100">
+            <p className="text-xl text-[#f3e7c7]">
               Responda às perguntas abaixo para que possamos entender seu perfil e verificar
               se a estrutura é ideal para você
             </p>
@@ -139,7 +139,7 @@ export default function Form() {
                   required
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-red-600 focus:outline-none transition-colors"
+                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-[#b8974c] focus:outline-none transition-colors"
                   placeholder="Seu nome completo"
                 />
               </div>
@@ -156,7 +156,7 @@ export default function Form() {
                     required
                     value={formData.whatsapp}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-red-600 focus:outline-none transition-colors"
+                    className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-[#b8974c] focus:outline-none transition-colors"
                     placeholder="(00) 00000-0000"
                   />
                 </div>
@@ -172,7 +172,7 @@ export default function Form() {
                     required
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-red-600 focus:outline-none transition-colors"
+                    className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-[#b8974c] focus:outline-none transition-colors"
                     placeholder="seu@email.com"
                   />
                 </div>
@@ -190,7 +190,7 @@ export default function Form() {
                     required
                     value={formData.city}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-red-600 focus:outline-none transition-colors"
+                    className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-[#b8974c] focus:outline-none transition-colors"
                     placeholder="Sua cidade"
                   />
                 </div>
@@ -205,7 +205,7 @@ export default function Form() {
                     required
                     value={formData.state}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-red-600 focus:outline-none transition-colors"
+                    className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-[#b8974c] focus:outline-none transition-colors"
                   >
                     <option value="">Selecione a UF</option>
                     <option value="AC">AC</option>
@@ -249,7 +249,7 @@ export default function Form() {
                     required
                     value={formData.country}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-red-600 focus:outline-none transition-colors"
+                    className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-[#b8974c] focus:outline-none transition-colors"
                     placeholder="País"
                   />
                 </div>
@@ -265,7 +265,7 @@ export default function Form() {
                   required
                   value={formData.isRepresentative}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-red-600 focus:outline-none transition-colors"
+                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-[#b8974c] focus:outline-none transition-colors"
                 >
                   <option value="">Selecione uma opção</option>
                   <option value="sim">Sim, já atuo como representante</option>
@@ -284,7 +284,7 @@ export default function Form() {
                   required
                   value={formData.segment}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-red-600 focus:outline-none transition-colors"
+                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-[#b8974c] focus:outline-none transition-colors"
                 >
                   <option value="">Selecione uma opção</option>
                   <option value="imovel">Imóvel</option>
@@ -305,7 +305,7 @@ export default function Form() {
                   required
                   value={formData.currentRevenue}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-red-600 focus:outline-none transition-colors"
+                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-[#b8974c] focus:outline-none transition-colors"
                 >
                   <option value="">Selecione uma opção</option>
                   <option value="nao-faturo">Ainda não faturo</option>
@@ -327,7 +327,7 @@ export default function Form() {
                   required
                   value={formData.desiredLeads}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-red-600 focus:outline-none transition-colors"
+                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-[#b8974c] focus:outline-none transition-colors"
                 >
                   <option value="">Selecione uma opção</option>
                   <option value="5-10">5 a 10 leads/dia</option>
@@ -340,7 +340,7 @@ export default function Form() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full py-5 bg-gradient-to-r from-red-600 to-red-700 text-white text-xl font-bold rounded-xl hover:from-red-700 hover:to-red-800 transform hover:scale-105 transition-all duration-200 shadow-xl disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-3"
+                className="w-full py-5 bg-gradient-to-r from-[#c9a05a] to-[#b8974c] text-white text-xl font-bold rounded-xl hover:from-[#d3ad66] hover:to-[#a7863d] transform hover:scale-105 transition-all duration-200 shadow-xl disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-3"
               >
                 {isSubmitting ? (
                   <>Enviando...</>

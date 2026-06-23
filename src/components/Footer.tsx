@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-3 gap-12 mb-12">
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-red-500"> <img src={LogoEixoBranca} alt="Logo Eixo Consórcios" className="mx-auto w-32 md:w-60 mb-8" /></h3>
+              <h3 className="text-2xl font-bold mb-4 text-[#c9a05a]"> <img src={LogoEixoBranca} alt="Logo Eixo Consórcios" className="mx-auto w-32 md:w-60 mb-8" /></h3>
               <p className="text-gray-400 leading-relaxed">
                 Estrutura profissional para representantes de consórcio que buscam crescimento
                 sustentável e previsível.
@@ -33,7 +33,7 @@ export default function Footer() {
             <div>
               <h4 className="text-lg font-bold mb-4">Informações Legais</h4>
               <div className="flex items-start gap-3 text-gray-400">
-                <Shield className="w-5 h-5 text-red-500 flex-shrink-0 mt-1" />
+                <Shield className="w-5 h-5 text-[#c9a05a] flex-shrink-0 mt-1" />
                 <p className="text-sm leading-relaxed">
                   Estrutura exclusiva para representantes ativos. Resultados dependem de dedicação
                   e aplicação da estratégia.

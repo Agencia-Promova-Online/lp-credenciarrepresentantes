@@ -29,7 +29,7 @@ export default function FloatingCTA() {
     >
       <button
         onClick={scrollToForm}
-        className="bg-gradient-to-r from-red-600 to-red-700 text-white px-6 py-4 rounded-full shadow-2xl hover:shadow-red-600/50 hover:scale-110 transition-all duration-200 flex items-center gap-3 font-bold"
+        className="bg-gradient-to-r from-[#c9a05a] to-[#b8974c] text-white px-6 py-4 rounded-full shadow-2xl hover:shadow-[#b8974c]/50 hover:scale-110 transition-all duration-200 flex items-center gap-3 font-bold"
       >
         <span className="hidden sm:inline">Quero a Estrutura</span>
         <ArrowRight className="w-5 h-5" />

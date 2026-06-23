@@ -5,8 +5,8 @@ export default function ThankYou() {
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 flex flex-col items-center justify-center p-4">
       <div className="bg-white p-8 md:p-12 rounded-3xl shadow-2xl max-w-3xl w-full text-center relative overflow-hidden">
         {/* Background Elements */}
-        <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-red-600 to-red-400"></div>
-        <div className="absolute -top-10 -right-10 w-40 h-40 bg-red-50 rounded-full blur-3xl opacity-50"></div>
+        <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-[#b8974c] to-[#d6b674]"></div>
+        <div className="absolute -top-10 -right-10 w-40 h-40 bg-[#f7f1e3] rounded-full blur-3xl opacity-50"></div>
         <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-gray-100 rounded-full blur-3xl opacity-50"></div>
 
         <div className="relative z-10">
@@ -46,7 +46,7 @@ export default function ThankYou() {
 
           <div className="bg-gray-50 rounded-2xl p-6 mb-10 border border-gray-100">
             <h4 className="font-semibold text-gray-900 mb-4 flex items-center justify-center gap-2">
-              <Smartphone className="w-5 h-5 text-red-500" />
+              <Smartphone className="w-5 h-5 text-[#b8974c]" />
               Fique atento ao seu WhatsApp
             </h4>
             <p className="text-gray-500 text-sm">
@@ -57,7 +57,7 @@ export default function ThankYou() {
           <div className="space-y-4 max-w-md mx-auto">
             <a 
               href="/" 
-              className="block w-full py-4 bg-red-600 text-white font-bold rounded-xl hover:bg-red-700 hover:shadow-lg hover:shadow-red-500/30 transition-all duration-300 flex items-center justify-center gap-2 group"
+              className="block w-full py-4 bg-[#b8974c] text-white font-bold rounded-xl hover:bg-[#a7863d] hover:shadow-lg hover:shadow-[#b8974c]/30 transition-all duration-300 flex items-center justify-center gap-2 group"
             >
               Voltar para a Página Inicial
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />

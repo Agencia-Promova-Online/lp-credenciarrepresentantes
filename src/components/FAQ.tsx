@@ -45,7 +45,7 @@ export default function FAQ() {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Perguntas <span className="text-red-600">Frequentes</span>
+              Perguntas <span className="text-[#b8974c]">Frequentes</span>
             </h2>
             <p className="text-xl text-gray-600">
               Tire suas dúvidas sobre a estrutura e como ela funciona
@@ -56,17 +56,17 @@ export default function FAQ() {
             {faqs.map((faq, index) => (
               <div
                 key={index}
-                className="bg-gradient-to-br from-gray-50 to-white border-2 border-gray-200 rounded-xl overflow-hidden hover:border-red-600 transition-all duration-300"
+                className="bg-gradient-to-br from-gray-50 to-white border-2 border-gray-200 rounded-xl overflow-hidden hover:border-[#b8974c] transition-all duration-300"
               >
                 <button
                   onClick={() => setOpenIndex(openIndex === index ? null : index)}
                   className="w-full px-8 py-6 flex items-center justify-between text-left group"
                 >
-                  <span className="text-lg font-bold text-gray-900 pr-8 group-hover:text-red-600 transition-colors">
+                  <span className="text-lg font-bold text-gray-900 pr-8 group-hover:text-[#8f7336] transition-colors">
                     {faq.question}
                   </span>
                   <ChevronDown
-                    className={`w-6 h-6 text-red-600 flex-shrink-0 transition-transform duration-300 ${
+                    className={`w-6 h-6 text-[#b8974c] flex-shrink-0 transition-transform duration-300 ${
                       openIndex === index ? 'rotate-180' : ''
                     }`}
                   />

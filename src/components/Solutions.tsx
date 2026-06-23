@@ -50,7 +50,7 @@ export default function Solutions() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              O Que a Eixo Consórcios <span className="text-red-600">Entrega</span>
+              O Que a Eixo Consórcios <span className="text-[#b8974c]">Entrega</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Uma estrutura completa e profissional para você focar no que faz de melhor: vender
@@ -61,9 +61,9 @@ export default function Solutions() {
             {solutions.map((solution, index) => (
               <div
                 key={index}
-                className="bg-gradient-to-br from-gray-50 to-white border-2 border-gray-200 rounded-xl p-6 hover:border-red-600 hover:shadow-xl transition-all duration-300 group"
+                className="bg-gradient-to-br from-gray-50 to-white border-2 border-gray-200 rounded-xl p-6 hover:border-[#b8974c] hover:shadow-xl transition-all duration-300 group"
               >
-                <div className="w-14 h-14 bg-red-600 rounded-lg flex items-center justify-center mb-5 group-hover:bg-red-700 transition-colors shadow-lg">
+                <div className="w-14 h-14 bg-[#b8974c] rounded-lg flex items-center justify-center mb-5 group-hover:bg-[#a7863d] transition-colors shadow-lg">
                   <solution.icon className="w-7 h-7 text-white" />
                 </div>
                 <h3 className="text-lg font-bold text-gray-900 mb-3">{solution.title}</h3>
@@ -73,7 +73,7 @@ export default function Solutions() {
           </div>
 
           <div className="mt-16 text-center">
-            <div className="inline-block bg-gradient-to-r from-red-600 to-red-700 text-white rounded-xl px-10 py-8 max-w-3xl shadow-2xl">
+            <div className="inline-block bg-gradient-to-r from-[#c9a05a] to-[#b8974c] text-white rounded-xl px-10 py-8 max-w-3xl shadow-2xl">
               <p className="text-2xl font-bold mb-2">Tudo Pronto Para Você Escalar</p>
               <p className="text-lg opacity-90">
                 Enquanto você vende, nossa equipe cuida do marketing, tráfego e otimizações

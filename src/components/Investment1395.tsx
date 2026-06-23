@@ -24,7 +24,7 @@ export default function Investment() {
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              <span className="text-red-600">Investimento</span> na Sua Estrutura
+              <span className="text-[#b8974c]">Investimento</span> na Sua Estrutura
             </h2>
             <p className="text-xl text-gray-600">
               Valores transparentes para uma estrutura profissional completa
@@ -32,9 +32,9 @@ export default function Investment() {
           </div>
 
           <div className="bg-white rounded-3xl shadow-2xl overflow-hidden border-2 border-gray-200">
-            <div className="bg-gradient-to-r from-red-600 to-red-700 text-white p-8 text-center">
+            <div className="bg-gradient-to-r from-[#c9a05a] to-[#b8974c] text-white p-8 text-center">
               <h3 className="text-2xl font-bold mb-2">Estrutura Premium</h3>
-              <p className="text-red-100">Tudo que você precisa para iniciar no processo de escala com previsibilidade</p>
+              <p className="text-[#f3e7c7]">Tudo que você precisa para iniciar no processo de escala com previsibilidade</p>
             </div>
 
             <div className="p-10">
@@ -55,7 +55,7 @@ export default function Investment() {
                 <div className="grid md:grid-cols-2 gap-4">
                   {includes.map((item, index) => (
                     <div key={index} className="flex items-start gap-3">
-                      <Check className="w-6 h-6 text-red-600 flex-shrink-0 mt-1" />
+                      <Check className="w-6 h-6 text-[#b8974c] flex-shrink-0 mt-1" />
                       <span className="text-gray-700 leading-relaxed">{item}</span>
                     </div>
                   ))}
@@ -76,7 +76,7 @@ export default function Investment() {
 
               <button
                 onClick={scrollToForm}
-                className="w-full py-5 bg-gradient-to-r from-red-600 to-red-700 text-white text-xl font-bold rounded-xl hover:from-red-700 hover:to-red-800 transform hover:scale-105 transition-all duration-200 shadow-xl"
+                className="w-full py-5 bg-gradient-to-r from-[#c9a05a] to-[#b8974c] text-white text-xl font-bold rounded-xl hover:from-[#d3ad66] hover:to-[#a7863d] transform hover:scale-105 transition-all duration-200 shadow-xl"
               >
                 Quero Garantir Minha Vaga na Estrutura
               </button>
