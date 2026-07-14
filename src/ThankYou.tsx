@@ -1,6 +1,10 @@
+import { useSearchParams } from 'react-router-dom';
 import { CheckCircle, ArrowRight, MessageCircle, Clock, Smartphone } from 'lucide-react';
 
 export default function ThankYou() {
+  const [searchParams] = useSearchParams();
+  const isConditionalFlow = searchParams.get('perfil') === 'triagem';
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 flex flex-col items-center justify-center p-4">
       <div className="bg-white p-8 md:p-12 rounded-3xl shadow-2xl max-w-3xl w-full text-center relative overflow-hidden">
@@ -15,11 +19,21 @@ export default function ThankYou() {
           </div>
           
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-            Solicitação Recebida com <span className="text-green-600">Sucesso!</span>
+            {isConditionalFlow ? (
+              <>
+                Cadastro Recebido com <span className="text-green-600">Sucesso!</span>
+              </>
+            ) : (
+              <>
+                Solicitação Recebida com <span className="text-green-600">Sucesso!</span>
+              </>
+            )}
           </h1>
           
           <p className="text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
-            Obrigado pelo seu interesse em fazer parte do nosso time. Seus dados já estão com nossa equipe de expansão.
+            {isConditionalFlow
+              ? 'Recebemos seus dados. Como voce ainda nao atua como representante ou ainda nao fatura com consorcio, nossa equipe fara uma triagem inicial para entender o melhor proximo passo para o seu momento.'
+              : 'Obrigado pelo seu interesse em fazer parte do nosso time. Seus dados ja estao com nossa equipe de expansao.'}
           </p>
 
           <div className="grid md:grid-cols-2 gap-6 mb-12 text-left">
@@ -27,9 +41,13 @@ export default function ThankYou() {
               <div className="bg-blue-100 w-12 h-12 rounded-xl flex items-center justify-center mb-4">
                 <Clock className="w-6 h-6 text-blue-600" />
               </div>
-              <h3 className="text-lg font-bold text-blue-900 mb-2">Análise de Perfil</h3>
+              <h3 className="text-lg font-bold text-blue-900 mb-2">
+                {isConditionalFlow ? 'Triagem Inicial' : 'Análise de Perfil'}
+              </h3>
               <p className="text-blue-800/80 text-sm">
-                Nossos especialistas analisarão suas informações para identificar a melhor oportunidade para sua região.
+                {isConditionalFlow
+                  ? 'Nossa equipe vai avaliar seu momento comercial e identificar se esta estrutura ja faz sentido para voce agora.'
+                  : 'Nossos especialistas analisarao suas informacoes para identificar a melhor oportunidade para sua regiao.'}
               </p>
             </div>
 
@@ -37,9 +55,13 @@ export default function ThankYou() {
               <div className="bg-green-100 w-12 h-12 rounded-xl flex items-center justify-center mb-4">
                 <MessageCircle className="w-6 h-6 text-green-600" />
               </div>
-              <h3 className="text-lg font-bold text-green-900 mb-2">Contato do Gestor</h3>
+              <h3 className="text-lg font-bold text-green-900 mb-2">
+                {isConditionalFlow ? 'Orientação do Time' : 'Contato do Gestor'}
+              </h3>
               <p className="text-green-800/80 text-sm">
-                Um de nossos gestores entrará em contato via WhatsApp nas próximas 24 horas úteis.
+                {isConditionalFlow
+                  ? 'Se o seu perfil estiver alinhado, entraremos em contato via WhatsApp para orientar os proximos passos.'
+                  : 'Um de nossos gestores entrara em contato via WhatsApp nas proximas 24 horas uteis.'}
               </p>
             </div>
           </div>
@@ -50,7 +72,9 @@ export default function ThankYou() {
               Fique atento ao seu WhatsApp
             </h4>
             <p className="text-gray-500 text-sm">
-              Nosso contato será realizado através do número informado no formulário. Verifique se o número está correto e fique de olho nas notificações.
+              {isConditionalFlow
+                ? 'Se o seu perfil avancar na triagem, nosso contato sera realizado pelo numero informado no formulario. Verifique se o numero esta correto e fique de olho nas notificacoes.'
+                : 'Nosso contato sera realizado atraves do numero informado no formulario. Verifique se o numero esta correto e fique de olho nas notificacoes.'}
             </p>
           </div>
 

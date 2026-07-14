@@ -1,19 +1,33 @@
 import { useState, FormEvent } from 'react';
 import { Send, CheckCircle } from 'lucide-react';
 
+const initialFormData = {
+  name: '',
+  whatsapp: '',
+  email: '',
+  instagram: '',
+  website: '',
+  city: '',
+  state: '',
+  country: 'Brasil',
+  isRepresentative: '',
+  segment: '',
+  currentRevenue: '',
+  desiredLeads: '',
+};
+
+const getRedirectUrl = (formData: typeof initialFormData) => {
+  const shouldUseConditionalThankYou =
+    formData.isRepresentative === 'nao_representante' ||
+    formData.currentRevenue === 'nao-faturo';
+
+  return shouldUseConditionalThankYou
+    ? '/obrigado?perfil=triagem'
+    : '/obrigado';
+};
+
 export default function Form() {
-  const [formData, setFormData] = useState({
-    name: '',
-    whatsapp: '',
-    email: '',
-    city: '',
-    state: '',
-    country: 'Brasil',
-    isRepresentative: '',
-    segment: '',
-    currentRevenue: '',
-    desiredLeads: '',
-  });
+  const [formData, setFormData] = useState(initialFormData);
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
@@ -49,7 +63,7 @@ export default function Form() {
         ? '/api/webhook' 
         : 'https://n8n.promovaonline.com.br/webhook/leads-lp-captarepresentantes';
       
-      const checkoutUrl = '/obrigado'; // TODO: Insira o link do checkout da Kiwify aqui
+      const checkoutUrl = getRedirectUrl(formData);
 
       await fetch(webhookUrl, {
         method: 'POST',
@@ -60,19 +74,7 @@ export default function Form() {
       });
 
       setIsSuccess(true);
-      setFormData({
-        name: '',
-        cpf: '',
-        whatsapp: '',
-        email: '',
-        city: '',
-        state: '',
-        country: 'Brasil',
-        isRepresentative: '',
-        segment: '',
-        currentRevenue: '',
-        desiredLeads: '',
-      });
+      setFormData(initialFormData);
       
       // Redirecionamento para a página de obrigado
       window.location.href = checkoutUrl;
@@ -178,6 +180,39 @@ export default function Form() {
                 </div>
               </div>
 
+              <div className="grid md:grid-cols-2 gap-6">
+                <div>
+                  <label htmlFor="instagram" className="block text-sm font-semibold text-gray-700 mb-2">
+                    @ do Instagram *
+                  </label>
+                  <input
+                    type="text"
+                    id="instagram"
+                    name="instagram"
+                    required
+                    value={formData.instagram}
+                    onChange={handleChange}
+                    className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-[#b8974c] focus:outline-none transition-colors"
+                    placeholder="@seuinstagram"
+                  />
+                </div>
+
+                <div>
+                  <label htmlFor="website" className="block text-sm font-semibold text-gray-700 mb-2">
+                    Site (opcional)
+                  </label>
+                  <input
+                    type="url"
+                    id="website"
+                    name="website"
+                    value={formData.website}
+                    onChange={handleChange}
+                    className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-[#b8974c] focus:outline-none transition-colors"
+                    placeholder="https://seusite.com.br"
+                  />
+                </div>
+              </div>
+
               <div className="grid md:grid-cols-3 gap-6">
                 <div>
                   <label htmlFor="city" className="block text-sm font-semibold text-gray-700 mb-2">
@@ -268,9 +303,9 @@ export default function Form() {
                   className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-[#b8974c] focus:outline-none transition-colors"
                 >
                   <option value="">Selecione uma opção</option>
-                  <option value="sim">Sim, já atuo como representante</option>
-                    <option value="sim">Sim, sou supervisor de consórcio</option>
-                  <option value="nao">Não, estou começando agora</option>
+                  <option value="representante">Sim, já atuo como representante</option>
+                  <option value="supervisor">Sim, sou supervisor de consórcio</option>
+                  <option value="nao_representante">Não é representante</option>
                 </select>
               </div>
 
@@ -308,7 +343,7 @@ export default function Form() {
                   className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-[#b8974c] focus:outline-none transition-colors"
                 >
                   <option value="">Selecione uma opção</option>
-                  <option value="nao-faturo">Ainda não faturo</option>
+                  <option value="nao-faturo">Ainda Não faturo</option>
                   <option value="ate-500k">Até 500 mil/mês</option>
                   <option value="500k-1M">500 mil a 1 milhão/mês</option>
                   <option value="1M-2M">1 milhão a 2 milhões/mês</option>

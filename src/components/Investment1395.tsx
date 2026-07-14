@@ -39,7 +39,7 @@ export default function Investment() {
 
             <div className="p-10">
 
-                <div className="text-center p-8 bg-gradient-to-br from-gray-50 to-white border-2 border-gray-300 rounded-2xl">
+                {/* <div className="text-center p-8 bg-gradient-to-br from-gray-50 to-white border-2 border-gray-300 rounded-2xl">
                   <div className="text-sm text-gray-600 font-semibold mb-2">MENSALIDADE</div>
                   <div className="text-md text-gray-500 mb-1">
                     De <span className="line-through">R$ 1.997</span> por:
@@ -48,7 +48,7 @@ export default function Investment() {
                     R$ 1.395
                   </div>
                   <div className="text-gray-600">Fidelidade de 6 meses</div>
-                </div>
+                </div> */}
 
               <div className="mb-10">
                 <h4 className="text-2xl font-bold text-gray-900 mb-6 text-center">O Que Está Incluso</h4>
