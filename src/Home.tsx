@@ -24,12 +24,13 @@ function Home() {
       <Segments />
       {/* <SocialProof /> */}
       <AboutUs />
-      <HowItWorks />
+      
       <Investment1395 />
       {/* <Plans /> */}
       <OrderBump />
-      <FAQ />
+      <HowItWorks />
       <Form />
+      <FAQ />
       <Footer />
       <FloatingCTA />
     </div>

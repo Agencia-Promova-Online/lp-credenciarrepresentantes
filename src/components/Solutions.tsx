@@ -73,7 +73,7 @@ export default function Solutions() {
           </div>
 
           <div className="mt-16 text-center">
-            <div className="inline-block bg-gradient-to-r from-[#c9a05a] to-[#b8974c] text-white rounded-xl px-10 py-8 max-w-3xl shadow-2xl">
+            <div className="inline-block bg-gradient-to-r from-[#1C1C1C] to-[#1A1A1A] text-white rounded-xl px-10 py-8 max-w-3xl shadow-2xl">
               <p className="text-2xl font-bold mb-2">Tudo Pronto Para Você Escalar</p>
               <p className="text-lg opacity-90">
                 Enquanto você vende, nossa equipe cuida do marketing, tráfego e otimizações

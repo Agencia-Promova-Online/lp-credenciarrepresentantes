@@ -32,7 +32,7 @@ export default function Investment() {
           </div>
 
           <div className="bg-white rounded-3xl shadow-2xl overflow-hidden border-2 border-gray-200">
-            <div className="bg-gradient-to-r from-[#c9a05a] to-[#b8974c] text-white p-8 text-center">
+            <div className="bg-gradient-to-r from-[#1A1A1A] to-[#1C1C1C] text-white p-8 text-center">
               <h3 className="text-2xl font-bold mb-2">Estrutura Premium</h3>
               <p className="text-[#f3e7c7]">Tudo que você precisa para iniciar no processo de escala com previsibilidade</p>
             </div>

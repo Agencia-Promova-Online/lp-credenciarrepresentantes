@@ -115,7 +115,7 @@ export default function Form() {
   }
 
   return (
-    <section id="form" className="py-24 bg-gradient-to-br from-[#c9a05a] to-[#8f7336]">
+    <section id="form" className="py-24 bg-gradient-to-br from-[#1A1A1A] to-[#000]">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
@@ -332,7 +332,7 @@ export default function Form() {
 
               <div>
                 <label htmlFor="currentRevenue" className="block text-sm font-semibold text-gray-700 mb-2">
-                  Quanto você fatura hoje com consórcio? *
+                  Quanto você vende hoje com consórcio? *
                 </label>
                 <select
                   id="currentRevenue"

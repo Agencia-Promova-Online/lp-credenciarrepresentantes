@@ -59,7 +59,7 @@ export default function HowItWorks() {
             ))}
           </div>
 
-          <div className="bg-gradient-to-r from-[#c9a05a] to-[#b8974c] text-white rounded-2xl p-10 text-center shadow-2xl">
+          <div className="bg-gradient-to-r from-[#1C1C1C] to-[#1A1A1A] text-white rounded-2xl p-10 text-center shadow-2xl">
             <h3 className="text-3xl font-bold mb-4">Implementação Rápida e Suporte Contínuo</h3>
             <p className="text-xl opacity-90 max-w-3xl mx-auto">
               Em poucos dias sua estrutura estará 100% operacional, com campanhas rodando e leads chegando.
